@@ -1,0 +1,10 @@
+name: RedisSemanticCache
+metadata:
+  description: |
+    This template deploys an Azure OpenAI instance, a Redis Cache. LangChain is configured to utilize the semantic cache to retrieve semantically similar prompt results. 
+  categories:  
+  - Redis
+  - Semantic Cache
+  - Azure OpenAI
+infra:
+  provider: terraform
