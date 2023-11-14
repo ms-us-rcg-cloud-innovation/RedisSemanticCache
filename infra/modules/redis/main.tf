@@ -17,7 +17,7 @@ resource "azurerm_redis_enterprise_database" "cache" {
   name              = "default"
   cluster_id        = azurerm_redis_enterprise_cluster.cache.id
   clustering_policy = "EnterpriseCluster"
-
+  eviction_policy   = "NoEviction"
   module {
     name = "RediSearch"
   }

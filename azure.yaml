@@ -8,3 +8,18 @@ metadata:
   - Azure OpenAI
 infra:
   provider: terraform
+hooks:
+  preup:
+    windows:
+      shell: pwsh
+      run: ./scripts/up.ps1
+    posix:
+      shell: sh
+      run: ./scripts/up.sh
+  predown:
+    windows:
+      shell: pwsh
+      run: ./scripts/down.ps1
+    posix:
+      shell: sh
+      run: ./scripts/down.sh

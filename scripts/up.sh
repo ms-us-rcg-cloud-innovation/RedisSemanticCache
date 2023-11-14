@@ -30,7 +30,3 @@ azd env set TERRAFORM_STATE_RESOURCE_GROUP $(terraform -chdir=bootstrap output -
 # go back to where we were
 popd
 echo "Current directory changed back to $(pwd)"
-
-# run azd up
-echo "Running azd up"
-azd up
