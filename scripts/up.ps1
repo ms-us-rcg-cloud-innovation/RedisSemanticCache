@@ -10,7 +10,7 @@ Push-Location $root
 terraform -chdir=bootstrap init
 
 "Running terraform bootstrap apply"
-terraform -chdir-bootstrap apply -auto-approve
+terraform -chdir=bootstrap apply -auto-approve
 
 "generating remote state input variables"
 
